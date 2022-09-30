@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import scarecrow from "./media/Scarecrow.png"
 import './App.css';
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="Error404text">404 NOT FOUND</div>
+      <div className="Container404">
+        <img className="Error404scarecrow" src={scarecrow} alt="Scarecrow 404"/>
+        <div>
+          <h1 className="Error404title">I have bad news for you</h1>
+          <p className="Error404paragraph">The page you are looking for night be removed or is temporarily unavailable</p>
+          <button className="Error404button">BACK TO HOMEPAGE</button>
+        </div>
+      </div>
+    </Fragment>
   );
 }
 
