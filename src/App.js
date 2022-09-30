@@ -5,6 +5,7 @@ import { Fragment } from "react";
 function App() {
   return (
     <Fragment>
+      
       <div className="Error404text">404 NOT FOUND</div>
       <div className="Container404">
         <img className="Error404scarecrow" src={scarecrow} alt="Scarecrow 404"/>
@@ -13,6 +14,9 @@ function App() {
           <p className="Error404paragraph">The page you are looking for night be removed or is temporarily unavailable</p>
           <button className="Error404button">BACK TO HOMEPAGE</button>
         </div>
+      </div>
+      <div className="Error404createdby">
+        created by Corkeyb - devChallenges
       </div>
     </Fragment>
   );
